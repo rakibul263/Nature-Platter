@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
     <head>
         <meta charset="UTF-8">
@@ -31,8 +31,47 @@
 
     <body class="sora-font">
         <!-- Header -->
-        <header>
+        <header class="container mx-auto">
+            <!-- navbar section -->
+            <nav class="mb-[6rem] border-b-[1px] border-b-[#179800] md:border-none">
+                <div class="navbar bg-base-100">
+                    <div class="flex justify-between items-center w-full">
+                        <img src="./c2-assets/logo-header.png" alt="Company Logo" class="h-10">
+                        <div class="dropdown dropdown-end md:hidden">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden" aria-label="Menu">
+                                <i class="fa-solid fa-bars h-[1rem] w-[1rem] text-[#179800]"></i>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
 
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-lg">
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact US</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden md:flex  space-x-[1.5rem] pl-[4rem]">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <button
+                            class="btn btn-outline text-[#179800] hover:bg-[#179800] hover:border-none">Login</button>
+                        <button
+                            class="btn text-white bg-[#179800] hover:bg-[#179800] hover:border-none">Register</button>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!-- Main -->
